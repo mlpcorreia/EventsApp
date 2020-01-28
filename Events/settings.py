@@ -24,7 +24,7 @@ SECRET_KEY = 'zm2rsz@!4tvkzqs+d$0-#(3!6%ue+k3(6-mp74(y4gu1by2g8g'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '0.0.0.0']
 
 # Application definition
 
@@ -36,7 +36,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'rest_framework_gis',
     'logic.apps.LogicConfig',
 ]
 
@@ -84,7 +83,7 @@ DATABASES = {
         'NAME': 'gis',
         'USER': 'user001',
         'PASSWORD': '123456789',
-        'HOST': 'localhost',
+        'HOST': '0.0.0.0',
         'PORT': '5432'
     }
 }
@@ -125,4 +124,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-APPEND_SLASH = False
+APPEND_SLASH = True
