@@ -26,19 +26,33 @@ python3 manage.py migrate
 python3 manage.py createsuperuser
 ```
 
-
 ```
 python3 manage.py runserver 
 ```
 
-To test the REST API 
+## Docker compose
 
-localhost:8000/api/events/
+Run the project
 
-localhost:8000/api/events/construction/
+```
+docker-compose up -d --build
+```
 
-(...)
+# To test the REST API 
 
+Using the browser its possible to acess all events
 
-Docker compose not complete
+GET, POST, PUT, DELETE are allowed in all events
+
+localhost:8000/api/events/\<pk\>/
+
+localhost:8000/api/events/construction/\<pk\>/
+
+localhost:8000/api/events/special-event/\<pk\>/
+
+localhost:8000/api/events/incident/\<pk\>/
+
+localhost:8000/api/events/weather-condition/\<pk\>/
+
+localhost:8000/api/events/road-condition/\<pk\>/
 
