@@ -83,7 +83,7 @@ DATABASES = {
         'NAME': 'gis',
         'USER': 'user001',
         'PASSWORD': '123456789',
-        'HOST': 'localhost',
+        'HOST': 'events_db',
         'PORT': '5432'
     }
 }
