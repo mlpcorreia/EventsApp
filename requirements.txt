@@ -1,5 +1,5 @@
 django==3.0.2
-djangorestframework==3.11.0
+djangorestframework==3.11.2
 django-extra-fields==2.0.2
 psycopg2-binary==2.8.4
 requests==2.22.0
